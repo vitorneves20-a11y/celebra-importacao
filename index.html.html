@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/joao.vitor/Downloads/index_5.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celebra Importação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Celebra Importação_files/css2" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#F8F8F8;color:#111;min-height:100vh}
+.topbar{background:#fff;border-bottom:1px solid #E8E8E8;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:30px;height:30px;background:#111;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px}
+.brand-name{font-size:14px;font-weight:500;letter-spacing:-0.2px}
+.brand-sub{font-size:11px;color:#888;margin-top:1px;text-transform:uppercase;letter-spacing:0.3px}
+.top-btn{font-size:12px;padding:6px 14px;border-radius:7px;border:1px solid #E0E0E0;background:transparent;color:#555;cursor:pointer;display:flex;align-items:center;gap:5px}
+.top-btn:hover{background:#F2F2F2}
+.stats-wrap{background:#fff;border-bottom:1px solid #E8E8E8}
+.stats-row{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);padding:0 1.5rem}
+.stat{padding:1rem 0.5rem;border-right:1px solid #F0F0F0}
+.stat:last-child{border-right:none}
+.stat-n{font-size:22px;font-weight:500;color:#111;line-height:1}
+.stat-n.g{color:#0F6E56}
+.stat-l{font-size:11px;color:#999;margin-top:3px;text-transform:uppercase;letter-spacing:0.4px}
+.main{max-width:900px;margin:0 auto;padding:1.5rem;display:grid;grid-template-columns:320px 1fr;gap:1.25rem;align-items:start}
+@media(max-width:680px){.main{grid-template-columns:1fr}.stats-row{grid-template-columns:repeat(2,1fr)}}
+.sec-hdr{display:flex;align-items:center;gap:8px;margin-bottom:0.875rem}
+.sec-line{flex:1;height:1px;background:#EFEFEF}
+.sec-lbl{font-size:10px;font-weight:500;color:#BBB;text-transform:uppercase;letter-spacing:0.8px;white-space:nowrap}
+.tabs{display:flex;border:1px solid #E8E8E8;border-radius:8px;overflow:hidden;margin-bottom:0.875rem}
+.ftab{flex:1;padding:8px 10px;border:none;border-right:1px solid #E8E8E8;background:transparent;font-family:'Inter',sans-serif;font-size:12px;color:#888;cursor:pointer;transition:all 0.15s;display:flex;align-items:center;justify-content:center;gap:5px}
+.ftab:last-child{border-right:none}
+.ftab.on-c{background:#111;color:#fff}
+.ftab.on-g{background:#085041;color:#9FE1CB}
+.card{background:#fff;border:1px solid #E8E8E8;border-radius:12px;padding:1.25rem;margin-bottom:1rem}
+.fsec{display:none}
+.fsec.show{display:block}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.frow.full{grid-template-columns:1fr}
+.flbl{font-size:10px;font-weight:500;color:#999;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:3px}
+.frow input,.frow select,.frow textarea{font-size:13px;width:100%;padding:8px 10px;border:1px solid #E4E4E4;border-radius:7px;background:#FAFAFA;color:#111;font-family:'Inter',sans-serif;outline:none;transition:border-color 0.15s}
+.frow input:focus,.frow select:focus,.frow textarea:focus{border-color:#AAA;background:#fff}
+.frow textarea{min-height:78px;resize:vertical;line-height:1.5}
+.upload-zone{border:1px dashed #DDD;border-radius:8px;padding:0.875rem;text-align:center;cursor:pointer;background:#FAFAFA;position:relative;margin-bottom:8px;transition:border-color 0.15s}
+.upload-zone:hover{border-color:#AAA}
+.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-txt{font-size:12px;color:#999;margin-top:4px}
+.upload-hint{font-size:11px;color:#CCC;margin-top:1px}
+.prev-wrap{position:relative;display:block;margin-bottom:8px}
+.prev-img{width:100%;max-height:180px;object-fit:cover;border-radius:8px;border:1px solid #EEE;display:block}
+.prev-rm{position:absolute;top:6px;right:6px;width:22px;height:22px;border-radius:50%;background:#111;color:#fff;border:none;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1}
+.btn-sub{width:100%;padding:9px;border:none;border-radius:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:opacity 0.15s;margin-top:2px}
+.btn-sub:hover{opacity:0.85}
+.btn-c{background:#111;color:#fff}
+.btn-g{background:#085041;color:#9FE1CB}
+.ok-msg{display:none;font-size:12px;text-align:center;padding:7px;border-radius:7px;margin-top:7px;font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin-bottom:0.875rem;flex-wrap:wrap}
+.controls select{font-size:12px;padding:6px 10px;border:1px solid #E8E8E8;border-radius:7px;background:#fff;color:#111;font-family:'Inter',sans-serif;outline:none;cursor:pointer}
+.ctrl-n{font-size:12px;color:#BBB;margin-left:auto}
+.post{background:#fff;border:1px solid #E8E8E8;border-radius:12px;margin-bottom:8px;overflow:hidden;border-left:3px solid transparent;transition:transform 0.1s}
+.post:hover{transform:translateY(-1px)}
+.post.c{border-left-color:#111}
+.post.g{border-left-color:#1D9E75}
+.post-img{width:100%;max-height:240px;object-fit:cover;display:block;border-bottom:1px solid #F0F0F0}
+.post-body{padding:1rem 1.125rem}
+.ptop{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;flex-shrink:0}
+.av.c{background:#F0F0F0;color:#333}
+.av.g{background:#E1F5EE;color:#085041}
+.pmeta{flex:1}
+.pname{font-size:13px;font-weight:500}
+.pinfo{font-size:11px;color:#999;margin-top:1px}
+.pbadge{font-size:10px;font-weight:500;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:0.3px}
+.pbadge.c{background:#F0F0F0;color:#555}
+.pbadge.g{background:#E1F5EE;color:#085041}
+.ptext{font-size:13px;line-height:1.65;margin-bottom:6px}
+.pto{font-size:12px;color:#888;margin-bottom:7px}
+.pto strong{color:#085041}
+.reacts{display:flex;gap:5px;padding-top:8px;border-top:1px solid #F4F4F4;flex-wrap:wrap}
+.rbtn{font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid #EEE;background:transparent;cursor:pointer;font-family:'Inter',sans-serif;color:#888;transition:all 0.15s}
+.rbtn:hover{border-color:#BBB;color:#333}
+.rbtn.on{background:#F0F0F0;border-color:#DDD;color:#333}
+.empty{text-align:center;padding:3rem;color:#CCC;font-size:13px}
+.spin{display:inline-block;width:18px;height:18px;border:2px solid #EEE;border-top-color:#BBB;border-radius:50%;animation:sp 0.7s linear infinite;vertical-align:middle;margin-right:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media print{.topbar,.sidebar,.controls,.reacts,.top-btn{display:none!important}body{background:#fff}.main{grid-template-columns:1fr;padding:0}.post{box-shadow:none;border:1px solid #EEE;break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-mark">🏆</div>
+    <div>
+      <div class="brand-name">Celebra Importação</div>
+      <div class="brand-sub"></div>
+    </div>
+  </div>
+  <button class="top-btn" onclick="window.print()">↓ Exportar PDF</button>
+</div>
+
+<div class="stats-wrap">
+  <div class="stats-row">
+    <div class="stat"><div class="stat-n" id="sn-t">0</div><div class="stat-l">Publicações</div></div>
+    <div class="stat"><div class="stat-n" id="sn-c">0</div><div class="stat-l">Celebrações</div></div>
+    <div class="stat"><div class="stat-n g" id="sn-g">0</div><div class="stat-l">Agradecimentos</div></div>
+    <div class="stat"><div class="stat-n" id="sn-r">0</div><div class="stat-l">Reações</div></div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+    <div class="sec-hdr"><span class="sec-lbl">Nova publicação</span><div class="sec-line"></div></div>
+    <div class="tabs">
+      <button class="ftab on-c" id="tab-c" onclick="swTab(&#39;c&#39;)">🏆 Celebração</button>
+      <button class="ftab" id="tab-g" onclick="swTab(&#39;g&#39;)">💚 Agradecimento</button>
+    </div>
+    <div class="card">
+      <div class="fsec show" id="fsec-c">
+        <div class="frow">
+          <div><label class="flbl">Nome</label><input id="cn" placeholder="Seu nome"></div>
+          <div><label class="flbl">Mês</label>
+            <select id="cm"><option value="">Selecione</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
+          </div>
+        </div>
+        <div class="frow full"><label class="flbl">Conquista</label><textarea id="ct" placeholder="Descreva sua conquista..."></textarea></div>
+        <label class="flbl" style="margin-bottom:4px">Foto (opcional)</label>
+        <div id="cuz">
+          <div class="upload-zone" ondragover="ev(event)" ondrop="dr(event,&#39;c&#39;)">
+            <input type="file" accept="image/*" onchange="pk(event,&#39;c&#39;)" id="cf">
+            <div>📷</div>
+            <div class="upload-txt">Clique ou arraste uma imagem</div>
+            <div class="upload-hint">JPG, PNG — até 2 MB</div>
+          </div>
+        </div>
+        <div id="cpv" style="display:none" class="prev-wrap">
+          <img id="cpi" class="prev-img" alt="Preview">
+          <button class="prev-rm" onclick="rmImg(&#39;c&#39;)">✕</button>
+        </div>
+        <button class="btn-sub btn-c" onclick="submitPost(&#39;c&#39;)">Publicar celebração</button>
+        <div class="ok-msg" id="ok-c" style="background:#F0F0F0;color:#444">✓ Publicado!</div>
+      </div>
+
+      <div class="fsec" id="fsec-g">
+        <div class="frow">
+          <div><label class="flbl">De</label><input id="gfr" placeholder="Seu nome"></div>
+          <div><label class="flbl">Para</label><input id="gto" placeholder="Nome da pessoa"></div>
+        </div>
+        <div class="frow full"><label class="flbl">Mês</label>
+          <select id="gm"><option value="">Selecione</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
+        </div>
+        <div class="frow full"><label class="flbl">Motivo</label><textarea id="gtx" placeholder="Por que você quer agradecer?"></textarea></div>
+        <label class="flbl" style="margin-bottom:4px">Foto (opcional)</label>
+        <div id="guz">
+          <div class="upload-zone" ondragover="ev(event)" ondrop="dr(event,&#39;g&#39;)">
+            <input type="file" accept="image/*" onchange="pk(event,&#39;g&#39;)" id="gf">
+            <div>📷</div>
+            <div class="upload-txt">Clique ou arraste uma imagem</div>
+            <div class="upload-hint">JPG, PNG — até 2 MB</div>
+          </div>
+        </div>
+        <div id="gpv" style="display:none" class="prev-wrap">
+          <img id="gpi" class="prev-img" alt="Preview">
+          <button class="prev-rm" onclick="rmImg(&#39;g&#39;)">✕</button>
+        </div>
+        <button class="btn-sub btn-g" onclick="submitPost(&#39;g&#39;)">Publicar agradecimento</button>
+        <div class="ok-msg" id="ok-g" style="background:#E1F5EE;color:#085041">✓ Publicado!</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="sec-hdr"><span class="sec-lbl">Feed do setor</span><div class="sec-line"></div></div>
+    <div class="controls">
+      <select id="fm" onchange="render()"><option value="">Todos os meses</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option></select>
+      <select id="ft" onchange="render()"><option value="">Todos os tipos</option><option value="c">Celebrações</option><option value="g">Agradecimentos</option></select>
+      <span class="ctrl-n" id="cnt">0 publicações</span>
+    </div>
+    <div id="feed"><div class="empty">📭 Nenhuma publicação encontrada.</div></div>
+  </div>
+</div>
+
+<script>
+// ================================================
+// CONFIGURACAO — substitua pelos seus dados do JSONBin
+// Siga o guia no GUIA-DEPLOY.md para obter esses valores
+// ================================================
+const BIN_ID  = "6a1db91829f34668c6d91037";
+const API_KEY = "$2a$10$6i6Y9GLnnc9nWjKK0dm.Ueal9xABNLHc24GOa4RTRC1ND4eoMVt1i";
+// ================================================
+
+const URL_BIN = "https://api.jsonbin.io/v3/b/" + BIN_ID;
+const HEADERS = {
+  "Content-Type": "application/json",
+  "X-Master-Key": API_KEY,
+  "X-Bin-Versioning": "false"
+};
+
+let posts = [];
+let imgD  = { c: null, g: null };
+let saving = false;
+
+async function load() {
+  try {
+    const r = await fetch(URL_BIN, { headers: { "X-Master-Key": API_KEY } });
+    const d = await r.json();
+    posts = (d.record && d.record.posts) || [];
+  } catch(e) { posts = []; }
+  render(); stats();
+}
+
+async function save() {
+  if (saving) return;
+  saving = true;
+  try { await fetch(URL_BIN, { method: "PUT", headers: HEADERS, body: JSON.stringify({ posts }) }); }
+  catch(e) {}
+  saving = false;
+}
+
+function ini(n) { return n.split(' ').slice(0,2).map(x => x[0]).join('').toUpperCase(); }
+function ev(e)  { e.preventDefault(); }
+function dr(e, t) { e.preventDefault(); const f = e.dataTransfer.files[0]; if(f) li(f, t); }
+function pk(e, t) { const f = e.target.files[0]; if(f) li(f, t); }
+
+function li(file, t) {
+  if (file.size > 2*1024*1024) { alert('Máximo 2 MB.'); return; }
+  const r = new FileReader();
+  r.onload = ev => {
+    imgD[t] = ev.target.result;
+    document.getElementById(t+'uz').style.display = 'none';
+    document.getElementById(t+'pi').src = ev.target.result;
+    document.getElementById(t+'pv').style.display = 'block';
+  };
+  r.readAsDataURL(file);
+}
+
+function rmImg(t) {
+  imgD[t] = null;
+  document.getElementById(t+'uz').style.display = 'block';
+  document.getElementById(t+'pv').style.display = 'none';
+  document.getElementById(t+'pi').src = '';
+  document.getElementById(t === 'c' ? 'cf' : 'gf').value = '';
+}
+
+function swTab(t) {
+  document.getElementById('fsec-c').classList.toggle('show', t === 'c');
+  document.getElementById('fsec-g').classList.toggle('show', t === 'g');
+  document.getElementById('tab-c').className = 'ftab' + (t === 'c' ? ' on-c' : '');
+  document.getElementById('tab-g').className = 'ftab' + (t === 'g' ? ' on-g' : '');
+}
+
+async function submitPost(t) {
+  let n, m, tx, to;
+  if (t === 'c') {
+    n  = document.getElementById('cn').value.trim();
+    m  = document.getElementById('cm').value;
+    tx = document.getElementById('ct').value.trim();
+    if (!n || !m || !tx) { alert('Preencha todos os campos.'); return; }
+  } else {
+    n  = document.getElementById('gfr').value.trim();
+    to = document.getElementById('gto').value.trim();
+    m  = document.getElementById('gm').value;
+    tx = document.getElementById('gtx').value.trim();
+    if (!n || !to || !m || !tx) { alert('Preencha todos os campos.'); return; }
+  }
+  const p = {
+    id: Date.now(), type: t, name: n, month: m, text: tx,
+    img: imgD[t] || null,
+    reactions: { star: 0, clap: 0, fire: 0, heart: 0 },
+    ts: new Date().toISOString()
+  };
+  if (to) p.to = to;
+  posts.unshift(p);
+  await save();
+  if (t === 'c') {
+    document.getElementById('cn').value = '';
+    document.getElementById('cm').value = '';
+    document.getElementById('ct').value = '';
+  } else {
+    document.getElementById('gfr').value = '';
+    document.getElementById('gto').value = '';
+    document.getElementById('gm').value  = '';
+    document.getElementById('gtx').value = '';
+  }
+  rmImg(t);
+  const ok = document.getElementById('ok-' + t);
+  ok.style.display = 'block';
+  setTimeout(() => ok.style.display = 'none', 2500);
+  render(); stats();
+}
+
+async function react(id, k) {
+  const p = posts.find(x => x.id === id);
+  if (!p) return;
+  const stored = JSON.parse(localStorage.getItem('rx') || '{}');
+  const key = id + '_' + k;
+  if (stored[key]) { p.reactions[k] = Math.max(0, (p.reactions[k] || 0) - 1); delete stored[key]; }
+  else             { p.reactions[k] = (p.reactions[k] || 0) + 1; stored[key] = 1; }
+  localStorage.setItem('rx', JSON.stringify(stored));
+  await save(); render(); stats();
+}
+
+function render() {
+  const fm = document.getElementById('fm').value;
+  const ft = document.getElementById('ft').value;
+  const stored = JSON.parse(localStorage.getItem('rx') || '{}');
+  const list = posts.filter(p => (!fm || p.month === fm) && (!ft || p.type === ft));
+  document.getElementById('cnt').textContent = list.length + ' publicações';
+  if (!list.length) {
+    document.getElementById('feed').innerHTML = '<div class="empty">📭 Nenhuma publicação encontrada.</div>';
+    return;
+  }
+  document.getElementById('feed').innerHTML = list.map(p => {
+    const es = p.type === 'c'
+      ? [['star','★'],['clap','👏'],['fire','🔥']]
+      : [['heart','♥'],['clap','👏'],['fire','🔥']];
+    return `<div class="post ${p.type}">
+      ${p.img ? `<img src="${p.img}" class="post-img" alt="Foto"/>` : ''}
+      <div class="post-body">
+        <div class="ptop">
+          <div class="av ${p.type}">${ini(p.name)}</div>
+          <div class="pmeta">
+            <div class="pname">${p.name}</div>
+            <div class="pinfo">${p.month} · 2026</div>
+          </div>
+          <span class="pbadge ${p.type}">${p.type === 'c' ? 'Celebração' : 'Agradecimento'}</span>
+        </div>
+        <div class="ptext">${p.text}</div>
+        ${p.to ? `<div class="pto">Para <strong>${p.to}</strong></div>` : ''}
+        <div class="reacts">${es.map(([k,e]) =>
+          `<button class="rbtn${stored[p.id+'_'+k] ? ' on' : ''}" onclick="react(${p.id},'${k}')">${e} ${p.reactions[k]||0}</button>`
+        ).join('')}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function stats() {
+  const c  = posts.filter(p => p.type === 'c').length;
+  const g  = posts.filter(p => p.type === 'g').length;
+  const rx = posts.reduce((a, p) => a + Object.values(p.reactions).reduce((b, v) => b + v, 0), 0);
+  document.getElementById('sn-t').textContent = posts.length;
+  document.getElementById('sn-c').textContent = c;
+  document.getElementById('sn-g').textContent = g;
+  document.getElementById('sn-r').textContent = rx;
+}
+
+load();
+</script>
+
+
+</body></html>
